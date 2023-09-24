@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Cormorant";
+    src: local("Cormorant"), url("./assets/fonts/Cormorant-Italic-VariableFont_wght.ttf") format("ttf");
+}
