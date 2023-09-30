@@ -1,7 +1,7 @@
 <script setup lang="ts">
 //import Main from './components/Main.vue';
 import NavMenu from "./components/NavMenu.vue";
-
+import { isMobile } from "./composables/PhoneCheckComposable";
 //function isMobile() {
 //   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 //     return true
@@ -9,10 +9,13 @@ import NavMenu from "./components/NavMenu.vue";
 //     return false
 //   }
 //  }
+
 </script>
 
 <template>
-  <div id="backdrop" class="absolute brightness-50"></div>
+  <div v-show="!isMobile()" id="backdrop" class="absolute brightness-50">
+  </div>
+  
   <div
     id="page-container"
     class="flex-col"
@@ -28,6 +31,12 @@ import NavMenu from "./components/NavMenu.vue";
   >
 
     <NavMenu></NavMenu>
+
+  
+    <div v-show="!isMobile()" class="flex justify-center align-middle text-center pt-52  ">
+    <p class="text-7xl m-auto font-semibold">Noah's Knife Sharpening</p>
+    </div>
+
   </div>
 
  
@@ -36,8 +45,8 @@ import NavMenu from "./components/NavMenu.vue";
 <style>
 #backdrop {
   /* Background pattern from Toptal Subtle Patterns */
-  background-image: url('assets/images/scissors.jpg');
-  height: 75%;
+  background-image: url('assets/images/sword.jpg');
+  height: 70%;
   width: 100%;
   z-index: -20;
   background-repeat: no-repeat;
