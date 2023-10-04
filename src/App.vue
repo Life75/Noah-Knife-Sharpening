@@ -2,6 +2,7 @@
 //import Main from './components/Main.vue';
 import NavMenu from "./components/NavMenu.vue";
 import { isMobile } from "./composables/PhoneCheckComposable";
+import Main from "./components/Main.vue"
 //function isMobile() {
 //   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 //     return true
@@ -24,7 +25,7 @@ import { isMobile } from "./composables/PhoneCheckComposable";
       margin-left: 5%;
       flex-direction: column;
       gap: 4em;
-      height: 100vh;
+      height: 60vh;
       margin: 0 5%;
       font-family: Cormorant;
     "
@@ -33,34 +34,50 @@ import { isMobile } from "./composables/PhoneCheckComposable";
     <NavMenu></NavMenu>
 
   
-    <div v-show="!isMobile()" class="flex justify-center align-middle text-center pt-52  ">
+    <div v-show="!isMobile()" class="flex justify-center align-middle text-center lg:pt-52 pt-24  ">
     <p class="text-7xl m-auto font-semibold">Noah's Knife Sharpening</p>
     </div>
 
-  </div>
 
- 
+  </div>
+  <Main     style="
+      margin-right: 5%;
+      margin-left: 5%;
+      flex-direction: column;
+      gap: 4em;
+   
+      margin: 0 5%;
+      font-family: Cormorant;
+    "/>
+
 </template>
 
 <style>
 #backdrop {
   /* Background pattern from Toptal Subtle Patterns */
-  background-image: url('assets/images/sword.jpg');
-  height: 70%;
+  background-image: url('assets/images/knife_high_res.jpg');
+  height: 60%;
   width: 100%;
   z-index: -20;
+  top: 0; 
+  left: 0;
   background-repeat: no-repeat;
   background-position: center; 
   
 }
 #page-container {
   position: relative;
-  min-height: 100vh;
 }
 
 #content-wrap {
   padding-bottom: 2.5rem; /* Footer height */
 }
+
+
+#wrapper {
+  position: relative;
+}
+
 
 #footer {
   position: absolute;
