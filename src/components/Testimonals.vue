@@ -14,13 +14,13 @@
             <ul class="space-y-8">
            
                
-                <li class=" leading-6">
-                    <div class="relative group">
+                <li class=" leading-6  ">
+                    <div class="relative group ">
                         <div
-                            class="absolute transition rounded-lg opacity-25 -inset-1 ">
-                        </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                            class="absolute transition rounded-lg opacity-25 -inset-1  ">
+                        </div>
                             <div
-                                class="relative p-6 space-y-6 leading-none rounded-lg bg-[#534C4C] ring-1 ring-gray-900/5">
+                                class="relative p-6 space-y-6 leading-none rounded-lg  bg-[#624A46] ring-1 ring-gray-900/5 h-80">
                                 <div class="flex items-center space-x-4">
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Zach H</h3>
@@ -30,9 +30,8 @@
                                         /></div>
                                     </div>
                                 </div>
-                                <p class="leading-normal text-gray-300 text-md font-bold">"Noah is excellent! My knives have never been sharper and he came to me! I 1000% endorse his work and fair prices. If you need a knife sharpener he should be #1 on your list."</p>
+                                <p class="review-text">"Noah is excellent! My knives have never been sharper and he came to me! I 1000% endorse his work and fair prices. If you need a knife sharpener he should be #1 on your list."</p>
                             </div>
-                        </a>
                     </div>
                 </li>
 
@@ -44,21 +43,20 @@
                     <div class="relative group">
                         <div
                             class="absolute transition rounded-lg opacity-25 -inset-1  blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                        </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                        </div>
                             <div
-                                class="relative p-6 space-y-6 leading-none rounded-lg bg-[#534C4C] ring-1 ring-gray-900/5">
+                                class="relative p-6 space-y-6 leading-none rounded-lg bg-[#624A46] ring-1 ring-gray-900/5 h-80">
                                 <div class="flex items-center space-x-4">
                                     <div>
-                                        <h3 class="text-lg font-semibold text-white"> Justice F</h3>
+                                        <h3 class="text-lg font-bold text-white"> Justice F</h3>
                                         <div><el-rate
                                         v-model="value"
                                         disabled
                                         /></div>
                                     </div>
                                 </div>
-                                <p class="leading-normal text-gray-300 text-md font-bold">"I just used this service. I'm very very satisfied. Noah's very nice and professional. He left my Shikomizue razor sharp and even notified me of a problem with my cane sword. Reasonably priced and professional. I will use him again."</p>
+                                <p class="review-text">"I just used this service. I'm very very satisfied. Noah's very nice and professional. He left my Shikomizue razor sharp and even notified me of a problem with my cane sword. Reasonably priced and professional. I will use him again."</p>
                             </div>
-                        </a>
                     </div>
                 </li>
           
@@ -66,15 +64,15 @@
                
             </ul>
 
-
+            
             <ul class="hidden space-y-8 lg:block">
                 <li class="text-sm leading-6">
                     <div class="relative group">
                         <div
                             class="absolute transition rounded-lg opacity-25 -inset-1  duration-400 group-hover:opacity-100 group-hover:duration-200">
-                        </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
+                        </div>
                             <div
-                                class="relative p-6 space-y-6 leading-none rounded-lg bg-[#534C4C] ring-1 ring-gray-900/5">
+                                class="relative p-6 space-y-6 leading-none rounded-lg bg-[#624A46] ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4">
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Josh E</h3>
@@ -84,9 +82,8 @@
                                         /></div>
                                     </div>
                                 </div>
-                                <p class="leading-normal text-gray-300 text-md font-bold">Incredible service. I dropped off 16 Wustoff knives to Noah earlier today and he had them done within 2 hours. These knives have never been sharper! Very quick, very efficient, and very well priced. I would recommend this service to anyone in the Pinellas area who needs their blades honed.</p>
+                                <p class="review-text">"Incredible service. I dropped off 16 Wustoff knives to Noah earlier today and he had them done within 2 hours. These knives have never been sharper! Very quick, very efficient, and very well priced. I would recommend this service to anyone in the Pinellas area who needs their blades honed."</p>
                             </div>
-                        </a>
                     </div>
                 </li>
           
@@ -107,3 +104,9 @@
 import {ref } from 'vue'
 const value = ref(5)
 </script>
+
+<style>
+.review-text {
+    @apply leading-normal  text-base font-bold
+}
+</style>
