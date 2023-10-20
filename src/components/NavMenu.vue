@@ -14,7 +14,7 @@
         <div class="flex justify-center align-middle py-4">
             <el-avatar class=" " :size="115" :src="circleUrl"/>
         </div>
-        <div v-show="!isMobile()" class="flex justify-center align-middle space-x-16 text-center text-xl cursor-default " style="">
+        <div v-show="!isMobile()" class="flex justify-center align-middle space-x-20 text-center text-2xl cursor-default " style="">
 
                 <p className=" relative group">
                     <div class="cursor-pointer">Make An Appointment</div>

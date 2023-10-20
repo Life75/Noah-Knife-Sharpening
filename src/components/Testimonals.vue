@@ -1,112 +1,75 @@
 <template>
-    <div>
-        <P class="text-5xl text-center pb-4">Testimonals</P>
-        <section id="testimonies" class="">
-    <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+  <div>
+    <P class="text-5xl text-center pb-9">Testimonals</P>
+    <span class="flex space-x-4">
+    <ReviewCards
+      description="Noah is excellent! My knives have never been sharper and he came to
+                  me! I 1000% endorse his work and fair prices. If you need a knife
+                  sharpener he should be #1 on your list."
+      :stars="5"
+      name="Zach H"
+    />
+
+    <ReviewCards
+      description= "I just used this service. I'm very very satisfied. Noah's very nice
+                    and professional. He left my Shikomizue razor sharp and even notified
+                    me of a problem with my cane sword. Reasonably priced and
+                    professional. I will use him again."
+      :stars="5"
+      name="Justice F"
+    />
+
+    <ReviewCards
+      description= "Incredible service. I dropped off 16 Wustoff knives to Noah earlier
+                    today and he had them done within 2 hours. These knives have never
+                    been sharper! Very quick, very efficient, and very well priced. I
+                    would recommend this service to anyone in the Pinellas area who needs
+                    their blades honed."
+      :stars="5"
+      name="Josh E"
+    />
+  </span>
 
 
-  
+    <div class="flex justify-center space-x-6 pt-10 text-xl font-medium">
+      <button
+        class="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow buttonAnimation"
+      >
+        Write a Review
+      </button>
 
-
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-
-
-            <ul class="space-y-8">
-           
-               
-                <li class=" leading-6  ">
-                    <div class="relative group ">
-                        <div
-                            class="absolute transition rounded-lg opacity-25 -inset-1  ">
-                        </div>
-                            <div
-                                class="relative p-6 space-y-6 leading-none rounded-lg  bg-[#624A46] ring-1 ring-gray-900/5 h-80">
-                                <div class="flex items-center space-x-4">
-                                    <div>
-                                        <h3 class="text-lg font-semibold text-white">Zach H</h3>
-                                        <div><el-rate
-                                        v-model="value"
-                                        disabled
-                                        /></div>
-                                    </div>
-                                </div>
-                                <p class="review-text">"Noah is excellent! My knives have never been sharper and he came to me! I 1000% endorse his work and fair prices. If you need a knife sharpener he should be #1 on your list."</p>
-                            </div>
-                    </div>
-                </li>
-
-            </ul>
-
-
-            <ul class="hidden space-y-8 sm:block">
-                <li class="text-sm leading-6">
-                    <div class="relative group">
-                        <div
-                            class="absolute transition rounded-lg opacity-25 -inset-1  blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                        </div>
-                            <div
-                                class="relative p-6 space-y-6 leading-none rounded-lg bg-[#624A46] ring-1 ring-gray-900/5 h-80">
-                                <div class="flex items-center space-x-4">
-                                    <div>
-                                        <h3 class="text-lg font-bold text-white"> Justice F</h3>
-                                        <div><el-rate
-                                        v-model="value"
-                                        disabled
-                                        /></div>
-                                    </div>
-                                </div>
-                                <p class="review-text">"I just used this service. I'm very very satisfied. Noah's very nice and professional. He left my Shikomizue razor sharp and even notified me of a problem with my cane sword. Reasonably priced and professional. I will use him again."</p>
-                            </div>
-                    </div>
-                </li>
-          
-              
-               
-            </ul>
-
-            
-            <ul class="hidden space-y-8 lg:block">
-                <li class="text-sm leading-6">
-                    <div class="relative group">
-                        <div
-                            class="absolute transition rounded-lg opacity-25 -inset-1  duration-400 group-hover:opacity-100 group-hover:duration-200">
-                        </div>
-                            <div
-                                class="relative p-6 space-y-6 leading-none rounded-lg bg-[#624A46] ring-1 ring-gray-900/5">
-                                <div class="flex items-center space-x-4">
-                                    <div>
-                                        <h3 class="text-lg font-semibold text-white">Josh E</h3>
-                                        <div><el-rate
-                                        v-model="value"
-                                        disabled
-                                        /></div>
-                                    </div>
-                                </div>
-                                <p class="review-text">"Incredible service. I dropped off 16 Wustoff knives to Noah earlier today and he had them done within 2 hours. These knives have never been sharper! Very quick, very efficient, and very well priced. I would recommend this service to anyone in the Pinellas area who needs their blades honed."</p>
-                            </div>
-                    </div>
-                </li>
-          
-
-                 
-             
-            </ul>
-
-
-        </div>
+      <button
+        class="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow buttonAnimation"
+      >
+        Read More
+      </button>
     </div>
-</section>
-    </div>
+  </div>
 </template>
 
-
 <script setup lang="ts">
-import {ref } from 'vue'
-const value = ref(5)
+import ReviewCards from "./ReviewCards.vue";
 </script>
 
 <style>
 .review-text {
-    @apply leading-normal  text-base font-bold
+  @apply leading-normal  text-base font-bold text-lg;
+}
+
+.buttonAnimation:hover {
+  animation-name: up-movement;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 50px 15px #48abe0;
+
+  @apply shadow-lg  hover:bg-gray-200;
+}
+
+@keyframes up-movement {
+  from {
+  }
+  to {
+    transform: translateY(-6px);
+  }
 }
 </style>
