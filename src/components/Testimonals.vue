@@ -1,13 +1,14 @@
 <template>
   <div>
     <P class="text-5xl text-center pb-9">Testimonals</P>
-    <span class="flex space-x-4">
+    <span class="md:flex md:space-x-4 ">
     <ReviewCards
       description="Noah is excellent! My knives have never been sharper and he came to
                   me! I 1000% endorse his work and fair prices. If you need a knife
                   sharpener he should be #1 on your list."
       :stars="5"
       name="Zach H"
+      class="pb-4"
     />
 
     <ReviewCards
@@ -17,6 +18,7 @@
                     professional. I will use him again."
       :stars="5"
       name="Justice F"
+      class="pb-4"
     />
 
     <ReviewCards
@@ -27,6 +29,7 @@
                     their blades honed."
       :stars="5"
       name="Josh E"
+      class="pb-4"
     />
   </span>
 
