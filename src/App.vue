@@ -3,13 +3,6 @@
 import NavMenu from "./components/NavMenu.vue";
 import { isMobile } from "./composables/PhoneCheckComposable";
 import Main from "./components/Main.vue"
-//function isMobile() {
-//   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-//     return true
-//   } else {
-//     return false
-//   }
-//  }
 
 </script>
 
@@ -21,11 +14,11 @@ import Main from "./components/Main.vue"
     id="page-container"
     class="flex-col"
     style="
+      @media (max-width: 800px) {}
       margin-right: 5%;
       margin-left: 5%;
       flex-direction: column;
       gap: 4em;
-      height: 60vh;
       margin: 0 5%;
       font-family: Cormorant;
     "
@@ -66,7 +59,12 @@ import Main from "./components/Main.vue"
   
 }
 #page-container {
-  position: relative;
+  position: relative;      
+  @media (max-width: 800px) {
+    height: 20vh
+  }
+  height: 60vh;
+
 }
 
 #content-wrap {
