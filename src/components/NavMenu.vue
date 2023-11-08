@@ -21,6 +21,7 @@
         <div class="flex justify-center align-middle py-4">
             <el-avatar class=" " :size="115" :src="circleUrl"/>
         </div>
+        
         <div v-show="!isMobile()" class="flex justify-center align-middle space-x-20 text-center text-2xl cursor-default " style="">
 
                 <p className=" relative group">
@@ -34,7 +35,7 @@
                 </p>
                 
                 <p className=" relative group">
-                    <div class="cursor-pointer">Call Now</div>
+                    <div class="cursor-pointer">Instructions</div>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
                 </p>
 
@@ -43,8 +44,19 @@
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
                 </p>
         </div>
-        <el-drawer v-model="showMenu" direction="ltr">
-        I am menu 
+        <el-drawer v-model="showMenu" :with-header="true" size="70%" direction="ltr" style="background-color: #3b3837 ">
+            <hr class="border-t-2 border-solid ">
+            <p class="p-2 text-xl">Make an Appointment</p>
+           
+            <hr class="border-t-2 border-solid ">
+            <p class="p-2 text-xl">Testimonals</p>
+
+            <hr class="border-t-2 border-solid ">
+            <p class="p-2 text-xl">Instructions</p>
+
+            <hr class="border-t-2 border-solid ">
+            <p class="p-2 text-xl">About Us</p>
+
         </el-drawer>
     </div>
 </template>

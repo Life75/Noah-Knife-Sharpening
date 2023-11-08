@@ -21,15 +21,15 @@
             <p class="mt-2 text-2xl text-gray-600">
                 Mobile Service For Knives: $15 fee. $3 fee per mile after 10 mi. Call or text the number provided for details and setting up an appointment.
 
-            </p>,
+            </p>
           </div>
         
         </div>
-        <div class="px-2"></div>
+        <div class="md:px-5"></div>
         <div class="max-w-md py-4 px-8 bg-gray-100  shadow-lg rounded-lg mb-20">
           <div>
             <h2 class="text-gray-800 text-4xl font-semibold text-center">Drop Off</h2>
-            <p class="mt-2 text-xl text-gray-600 text-center ">
+            <p class="mt-2 text-2xl text-gray-600 text-center ">
                 For drop off, you can come and drop off your knives at my residence.
             </p>
           </div>
