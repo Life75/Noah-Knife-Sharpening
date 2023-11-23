@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <P class="text-5xl text-center pb-9">Testimonals</P>
-    <span class="md:flex md:space-x-4 ">
+  <div class="text-left">
+    <P class="font-bold text-7xl text-center pb-7 ">Testimonals</P>
+    <span class="md:flex md:space-x-10 ">
     <ReviewCards
       description="Noah is excellent! My knives have never been sharper and he came to
                   me! I 1000% endorse his work and fair prices. If you need a knife
                   sharpener he should be #1 on your list."
       :stars="5"
       name="Zach H"
-      class="pb-4"
+      class="mb-4"
     />
 
     <ReviewCards
@@ -18,7 +18,7 @@
                     professional. I will use him again."
       :stars="5"
       name="Justice F"
-      class="pb-4"
+      class="mb-4"
     />
 
     <ReviewCards
@@ -29,12 +29,12 @@
                     their blades honed."
       :stars="5"
       name="Josh E"
-      class="pb-4"
+      class="mb-4"
     />
   </span>
 
 
-    <div class="flex justify-center space-x-6 pt-10 text-xl font-medium">
+    <div class="flex justify-center align-middle space-x-6 pt-8 text-xl font-medium">
       <button
         class="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow buttonAnimation"
       >

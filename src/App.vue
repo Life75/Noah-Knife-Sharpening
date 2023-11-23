@@ -27,9 +27,7 @@ import Main from "./components/Main.vue"
     <NavMenu></NavMenu>
 
   
-    <div v-show="!isMobile()" class="flex justify-center align-middle text-center lg:pt-52 pt-24   ">
-    <p class="text-7xl m-auto font-semibold flex">Noah's Knife <p class="pl-3 " style="text-decoration: underline;">Sharpening</p></p>
-     </div>
+
 
 
   </div>
