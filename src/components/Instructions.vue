@@ -1,5 +1,5 @@
 <template>
-  <div id="instructions" class="py-5 rounded shadow border-4 border-gray-400 border-dashed bg-[#353332] ">
+  <div id="instructions" class="py-5 rounded shadow-xl border-4 border-gray-400 border-dashed bg-[#353332] ">
     
     <div class="">
       <p class="text-center text-5xl font-extrabold pt-1.5">By Appointment Only</p>
@@ -18,8 +18,8 @@
         <p>*If you are a restaurant, ask about special deals*</p>
       </div>
       <p class="text-center text-4xl pt-8 pb-6 font-bold">Options for services</p>
-      <span class="md:flex justify-center align-middle space-x-10">
-        <v-card class=" text-xl"  max-width="400"  
+      <span class="md:flex justify-center align-middle md:space-y-0 space-y-10">
+        <v-card class=" text-xl mr-4"  max-width="400"  min-width="300"  min-height="300"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-car" ></v-icon>
@@ -39,7 +39,7 @@
             </p>
             </v-card-text>
           </v-card>
-        <v-card class=" text-xl"  max-width="400" 
+        <v-card class=" text-xl"  max-width="400"  min-width="300"  min-height="300"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>

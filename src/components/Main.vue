@@ -3,7 +3,7 @@
     <Instructions class="mt-10 "/>
     <Testimonals class="pt-36"/>
     <FAQ class="pt-36"/>
-    <ContactUs class="pt-36"/>
+    <ContactUs class="pt-36 pb-5"/>
 
     </div>
 </template>
