@@ -3,6 +3,7 @@
 import NavMenu from "./components/NavMenu.vue";
 import { isMobile } from "./composables/PhoneCheckComposable";
 import Main from "./components/Main.vue"
+import Plug from "./components/Plug.vue"
 
 </script>
 

@@ -35,17 +35,20 @@
 
 
     <div class="flex justify-center align-middle space-x-6 pt-8 text-xl font-medium">
-      <button
-        class="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow buttonAnimation"
-      >
-        Write a Review
-      </button>
-
-      <button
-        class="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow buttonAnimation"
-      >
-        Read More
-      </button>
+      <a href="https://www.google.com/search?q=noah%27s+knife+sharepning&oq=noah%27s+knife+sharepning+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEJMTM1NjRqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x4bceb231bf6b144d:0xced405ecdaa0155b,3,,,,&wptab=si:ALGXSlZ8i7MGbFEugZna-VrLlcMQBNb8MzFAddUUfsgFW3qrVbzECwkaLwd-SbZgsYCoGv65y_e8ZvSg8OLH4A4k_jIC9JIx_AQEA603RecQcK-HsWJyvD7vAkr2Qb5Bd-we7Fo5r7WO7XuaoKCch3T3VwZYr28pN9Ra1kSqn_hvY5nWAJRSRpg%3D">
+        <button
+          class="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow buttonAnimation"
+        >
+          Write a Review
+        </button>
+      </a>
+      <a href="https://www.google.com/search?q=noah%27s+knife+sharepning&oq=noah%27s+knife+sharepning+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEJMTM1NjRqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8#wptab=si:ALGXSlZ8i7MGbFEugZna-VrLlcMQBNb8MzFAddUUfsgFW3qrVbzECwkaLwd-SbZgsYCoGv65y_e8ZvSg8OLH4A4k_jIC9JIx_AQEA603RecQcK-HsWJyvD7vAkr2Qb5Bd-we7Fo5r7WO7XuaoKCch3T3VwZYr28pN9Ra1kSqn_hvY5nWAJRSRpg%3D">
+        <button
+          class="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow buttonAnimation"
+        >
+          Read More
+        </button>
+      </a>
     </div>
   </div>
 </template>

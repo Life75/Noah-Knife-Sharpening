@@ -1,7 +1,6 @@
 <template>
     <div id="NavMenu">
         <div class="flex md:align-middle pt-4  md:justify-end justify-center ">
-            
             <div v-show="isMobile()" @click="showMenu = true">
                 <div class="lineHelper"></div>
                 <div class="lineHelper"></div>
@@ -25,40 +24,50 @@
             <p class="text-7xl m-auto font-semibold flex">Noah's Knife <p class="pl-3 " style="text-decoration: underline;">Sharpening</p></p>
         </div>
         <div v-show="!isMobile()" class="flex justify-center align-middle space-x-20 text-center text-2xl cursor-default " style="">
+                <a href="https://noahsknifesharpening.as.me/schedule/6368d14f">
+                    <p className=" relative group">
+                        <div class="cursor-pointer hover-underline-animation">Make An Appointment</div>
+                    <span className="absolute z-10 -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+                    </p>
+                </a>
+                <a href="#testimonals">
+                    <p className=" relative group">
+                        <div class="cursor-pointer hover-underline-animation"> Testimonials</div>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+                    </p>
+                </a>
+                <a href="#instructions">
+                    <p className=" relative group ">
+                        <div class="cursor-pointer hover-underline-animation">Instructions</div>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+                    </p>
+                </a>
 
-                <p className=" relative group">
-                    <div class="cursor-pointer hover-underline-animation">Make An Appointment</div>
-                <span className="absolute z-10 -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
-                </p>
-
-                <p className=" relative group">
-                    <div class="cursor-pointer hover-underline-animation">Testimonials</div>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
-                </p>
-                
-                <p className=" relative group ">
-                    <div class="cursor-pointer hover-underline-animation">Instructions</div>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
-                </p>
-
-                <p className=" relative group">
-                    <div class="cursor-pointer hover-underline-animation">About Us</div>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
-                </p>
+                <a href="#contactUs">
+                    <p className=" relative group">
+                        <div class="cursor-pointer hover-underline-animation">Contact Us</div>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+                    </p>
+                </a>
         </div>
         <el-drawer v-model="showMenu" :with-header="true" size="70%" direction="ltr" style="background-color: #3b3837 ">
-            <hr class="border-t-2 border-solid ">
-            <p class="p-2 text-xl">Make an Appointment</p>
-           
-            <hr class="border-t-2 border-solid ">
-            <p class="p-2 text-xl">Testimonals</p>
-
-            <hr class="border-t-2 border-solid ">
-            <p class="p-2 text-xl">Instructions</p>
-
-            <hr class="border-t-2 border-solid ">
-            <p class="p-2 text-xl">About Us</p>
-
+            <a href="https://noahsknifesharpening.as.me/schedule/6368d14f">
+                <p class="p-2 text-xl">Make an Appointment</p>
+            </a>
+            <a href="#testimonals" @click="()=> {showMenu = false}">
+                <hr class="border-t-2 border-solid ">
+                <p class="p-2 text-xl">Testimonals</p>
+            </a>
+            
+            <a href="#instructions" @click="()=> {showMenu = false}">
+                <hr class="border-t-2 border-solid ">
+                <p class="p-2 text-xl">Instructions</p>
+            </a>
+            
+            <a href="#contactUs" @click="()=> {showMenu = false}">
+                <hr class="border-t-2 border-solid ">
+                <p class="p-2 text-xl">Contact Us</p>
+            </a>
         </el-drawer>
     </div>
 </template>
@@ -109,5 +118,9 @@ const showMenu = ref(false)
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+html{
+     scroll-behavior: smooth;;
+   }
 
 </style>

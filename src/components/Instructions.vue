@@ -1,5 +1,5 @@
 <template>
-  <div id="instructions" class="py-5 rounded shadow-xl border-4 border-gray-400 border-dashed bg-[#353332] ">
+  <div id="instructions" class="py-5 rounded shadow-xl border-4 border-gray-400  bg-[#353332] ">
     
     <div class="">
       <p class="text-center text-5xl font-extrabold pt-1.5">By Appointment Only</p>
@@ -13,6 +13,8 @@
       <div class="text-center text-2xl py-10">
         <p class="text-4xl pt-5 font-bold pb-2">Prices</p>
         <p>$1 per inch with a minimum of $5</p>
+        <p>$1.5 per for serrated</p>
+        <p>$5 for basic scissors</p>
         <p>$5 for tip repair (large broken tip)</p>
         <p>Other items subject to price discussion</p>
         <p>*If you are a restaurant, ask about special deals*</p>
