@@ -3,7 +3,6 @@
 import NavMenu from "./components/NavMenu.vue";
 import { isMobile } from "./composables/PhoneCheckComposable";
 import Main from "./components/Main.vue"
-import Plug from "./components/Plug.vue"
 
 </script>
 
@@ -32,7 +31,7 @@ import Plug from "./components/Plug.vue"
 
 
   </div>
-  <Main     style="
+  <Main style="
       margin-right: 5%;
       margin-left: 5%;
       flex-direction: column;

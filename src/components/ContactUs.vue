@@ -4,11 +4,14 @@
         <v-divider class="py-5" />
 
         <div class="md:flex justify-center text-center align-middle md:space-x-20 md:space-y-0 space-y-10  ">
-            <div class="space-y-1 justify-center align-middle ">
-                <p class="text-4xl font-semibold text-center pb-2">Contact</p>
-
-                <v-btn style="background-color: #353332;" prepend-icon="mdi-phone" variant="outlined">Call Now</v-btn>
-                <p class="text-2xl font-semibold ">(727) 490-9652</p>
+            <div class="space-y-1 justify-center align-middle">
+                <p class="text-4xl font-semibold text-center pb-5">Contact</p>
+                <div>
+                <a href="tel:7274909652" style="background-color: #353332" class="p-2 border-2 border-white rounded-md">
+                    <v-icon icon="mdi-phone"></v-icon>
+                    Call Now</a>        
+                <p class="text-2xl font-semibold pt-3">(727) 490-9652</p>
+            </div>
             </div>
             <div>
                 <p class="text-4xl font-semibold text-center pb-2">Business Hours</p>
