@@ -8,8 +8,9 @@
             </div>
             <p v-show="isMobile()" class="text-center md:pl-14 md:text-3xl text-2xl font-semibold m-auto">Noah's Knife Sharpening</p>
             
-            <div v-show="!isMobile()" class="pt-1 ml-auto">
-                <p>Made by Austyn Washington</p>
+            <div v-show="!isMobile()" class="pt-1 ml-auto flex">
+                <p>Made by Austyn Washington. Want a custom website like this?</p>
+                <el-link href="https://awashington.notion.site/Hi-I-m-Austyn-fa6d777cd1a4409faf3fdd734b44cb03?pvs=4" type="primary" class="text pl-3">Contact me here</el-link>
             </div>    
         </div>
         <hr class="h-px my-4  border-0 bg-[#E5EAF3] opacity-25">
@@ -17,7 +18,7 @@
         <div class="flex justify-center align-middle py-4">
             <el-avatar class=" " :size="115" :src="circleUrl"/>
         </div>
-        <div v-show="!isMobile()" class="flex justify-center align-middle text-center   py-7   ">
+        <div v-show="!isMobile()" class="flex justify-center align-middle text-center   py-5   ">
             <p class="text-7xl m-auto font-semibold flex">Noah's Knife <p class="pl-3 " style="text-decoration: underline;">Sharpening</p></p>
         </div>
         <div v-show="!isMobile()" class="flex justify-center align-middle space-x-20 text-center text-2xl cursor-default " style="">
