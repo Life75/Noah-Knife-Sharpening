@@ -1,5 +1,5 @@
 <template>
-  <div id="instructions" class="py-5 rounded shadow-xl border-4 border-gray-400  bg-[#353332] ">
+  <div id="instructions" class="py-5 rounded shadow-xl border-2 border-gray-400  bg-[#353332] ">
     
     <div class="">
       <p class="text-center text-5xl font-extrabold pt-1.5">By Appointment Only</p>

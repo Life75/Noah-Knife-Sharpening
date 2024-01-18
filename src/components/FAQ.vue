@@ -24,6 +24,7 @@
                 <p>Take out the lock in the locker.</p>
                 <p>Put your items in.</p>
                 <p>Lock the locker then spin the combination.</p>
+                <el-link href="https://youtube.com/shorts/2lnKg-dXgIA?feature=share" type="primary" class="text-xl"><p class="text-xl">Click here to view video tutorial</p></el-link>
             </div>
         </v-expansion-panel-text>
       </v-expansion-panel>
