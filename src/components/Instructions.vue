@@ -41,7 +41,9 @@
             </p>
             </v-card-text>
           </v-card>
-        <v-card class=" text-xl"  max-width="400"  min-width="300"  min-height="300"
+          <!--Embed the links wraping with an ahref -->
+        <a href="">
+        <v-card class=" text-xl mr-4 hover:bg-gray-300 cursor-pointer "  max-width="400"  min-width="300"  min-height="350"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>
@@ -54,6 +56,27 @@
               For drop off services
               schedule a time that is best for you to come and drop off your items in one of the locker slots on the porch
               of my residence. Please do not knock on the door. There will be instructions on the locker to guide you.
+            </p>
+            </v-card-text>
+          </v-card>
+        </a>
+          <v-card class=" text-xl hover:bg-gray-300 cursor-pointer"  max-width="400"  min-width="300"  min-height="350"
+             >
+             <template v-slot:prepend>
+                <v-icon icon="mdi-package" ></v-icon>
+             </template>
+             <template v-slot:title>
+             <p class="text-3xl font-bold">Drop Off: Restoration</p>
+             </template>
+            <v-card-text>
+              <p class="mt-2 text-2xl text-gray-600 text-left ">
+                Full derust, repair, cleaning, and polish for damaged blades. 
+              </p>
+              <p class="mt-2 text-2xl text-gray-600 text-left ">
+                • No handle structure repairs, only metal cleaning and polishing. 
+              </p>
+              <p class="mt-2 text-2xl text-gray-600 text-left ">
+                • $25 an hour (can take anywhere between 1-5 hours depending on damage)
             </p>
             </v-card-text>
           </v-card>
