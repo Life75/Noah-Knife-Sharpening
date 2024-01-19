@@ -47,7 +47,7 @@ import Main from "./components/Main.vue"
 #backdrop {
   /* Background pattern from Toptal Subtle Patterns */
   background-image: url('assets/images/knife_high_res.jpg');
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   z-index: -20;
   top: 0; 
@@ -61,7 +61,7 @@ import Main from "./components/Main.vue"
   @media (max-width: 800px) {
     height: 20vh
   }
-  height: 60vh;
+  height: 500px;
 
 }
 

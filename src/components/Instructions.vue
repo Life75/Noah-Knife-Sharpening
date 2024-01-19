@@ -4,7 +4,7 @@
     <div class="">
       <p class="text-center text-5xl font-extrabold pt-1.5">By Appointment Only</p>
     </div>
-    <div class="m-7">
+    <div class="justify-center align-middle m-7">
       <p class="text-2xl text-center">
         I provide a mobile and drop-off sharpening service for a variety of blades and
         tools like kitchen cutlery, scissors, garden tools, hatchets and axes, swords,
@@ -20,8 +20,8 @@
         <p>*If you are a restaurant, ask about special deals*</p>
       </div>
       <p class="text-center text-4xl pt-8 pb-6 font-bold">Options for services</p>
-      <span class="md:flex justify-center align-middle md:space-y-0 space-y-10">
-        <v-card class=" text-xl mr-4"  max-width="400"  min-width="300"  min-height="300"
+      <span class="lg:flex justify-center align-middle  md:space-y-0 md:space-x-4 space-x-0 space-y-5  ">
+        <v-card class=" text-xl "  max-width="350"  min-width="300"  min-height="450" max-height="400"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-car" ></v-icon>
@@ -39,17 +39,18 @@
               details and setting up an appointment.
 
             </p>
+            
             </v-card-text>
           </v-card>
-          <!--Embed the links wraping with an ahref -->
-        <a href="">
-        <v-card class=" text-xl mr-4 hover:bg-gray-300 cursor-pointer "  max-width="400"  min-width="300"  min-height="350"
+      
+        <v-card class=" text-xl  hover:bg-gray-300 cursor-pointer "  max-width="350"  min-width="300"  min-height="450"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>
              </template>
              <template v-slot:title>
              <p class="text-3xl font-bold">Drop Off</p>
+             <!--TODO place question mark icon and link to website tutorial https://element-plus.org/en-US/component/icon.html#icon-collection -->
              </template>
             <v-card-text>
               <p class="mt-2 text-2xl text-gray-600 text-left ">
@@ -59,14 +60,14 @@
             </p>
             </v-card-text>
           </v-card>
-        </a>
-          <v-card class=" text-xl hover:bg-gray-300 cursor-pointer"  max-width="400"  min-width="300"  min-height="350"
+    
+          <v-card class=" text-xl hover:bg-gray-300 cursor-pointer"  max-width="350"  min-width="300"  min-height="400" max-height="450"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>
              </template>
              <template v-slot:title>
-             <p class="text-3xl font-bold">Drop Off: Restoration</p>
+             <p class="text-3xl font-bold text-wrap ">Drop Off: Restoration</p>
              </template>
             <v-card-text>
               <p class="mt-2 text-2xl text-gray-600 text-left ">
@@ -75,7 +76,7 @@
               <p class="mt-2 text-2xl text-gray-600 text-left ">
                 • No handle structure repairs, only metal cleaning and polishing. 
               </p>
-              <p class="mt-2 text-2xl text-gray-600 text-left ">
+              <p class="mt-2 text-2xl text-gray-600 text-left text-wrap ">
                 • $25 an hour (can take anywhere between 1-5 hours depending on damage)
             </p>
             </v-card-text>
