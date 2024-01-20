@@ -10,18 +10,20 @@
         tools like kitchen cutlery, scissors, garden tools, hatchets and axes, swords,
         pocket and hunting knives, lawnmower blades, and more.
       </p>
-      <div class="text-center text-2xl py-10">
+      <div class="text-center text-3xl py-10">
         <p class="text-4xl pt-5 font-bold pb-2">Prices</p>
-        <p>$1 per inch with a minimum of $5</p>
-        <p>$1.5 per for serrated</p>
-        <p>$5 for basic scissors</p>
-        <p>$5 for tip repair (large broken tip)</p>
-        <p>Other items subject to price discussion</p>
-        <p>*If you are a restaurant, ask about special deals*</p>
+        <span class="font-bold">
+          <p>$1 per inch with a minimum of $5</p>
+          <p>$1.5 per for serrated</p>
+          <p>$5 for basic scissors</p>
+          <p>$5 for tip repair (large broken tip)</p>
+          <p>Other items subject to price discussion</p>
+          <p class="">*If you are a restaurant, ask about special deals*</p>
+        </span>
       </div>
       <p class="text-center text-4xl pt-8 pb-6 font-bold">Options for services</p>
       <span class="lg:flex justify-center align-middle  md:space-y-0 md:space-x-4 space-x-0 space-y-5  ">
-        <v-card class=" text-xl "  max-width="350"  min-width="300"  min-height="450" max-height="400"
+        <v-card class=" text-xl "  max-width="420"  min-width="300"  min-height="450" max-height="400"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-car" ></v-icon>
@@ -43,14 +45,13 @@
             </v-card-text>
           </v-card>
       
-        <v-card class=" text-xl  hover:bg-gray-300 cursor-pointer "  max-width="350"  min-width="300"  min-height="450"
+        <v-card class=" text-xl  cursor-pointer "  max-width="420"  min-width="300"  min-height="450" link href="https://youtube.com/shorts/2lnKg-dXgIA?feature=share" append-icon="mdi-help-circle"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>
              </template>
              <template v-slot:title>
-             <p class="text-3xl font-bold">Drop Off</p>
-             <!--TODO place question mark icon and link to website tutorial https://element-plus.org/en-US/component/icon.html#icon-collection -->
+                <p class="text-3xl font-bold">Drop Off</p>
              </template>
             <v-card-text>
               <p class="mt-2 text-2xl text-gray-600 text-left ">
@@ -61,7 +62,7 @@
             </v-card-text>
           </v-card>
     
-          <v-card class=" text-xl hover:bg-gray-300 cursor-pointer"  max-width="350"  min-width="300"  min-height="400" max-height="450"
+          <v-card class=" text-xl cursor-pointer"  max-width="420"  min-width="300"  min-height="400" max-height="450" link href="https://youtube.com/shorts/2lnKg-dXgIA?feature=share" append-icon="mdi-help-circle"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>
@@ -86,18 +87,10 @@
         </div>
       </span>
     </div>
-    <!--Before starting on this sketch out and make similar to the "how does it work" component in this website as a reference: https://www.realtimecolors.com/?colors=e9c46a-264653-e76f51-2a9d8f-e9c46a&fonts=Poppins-Poppins-->
   
   </div>
 </template>
 
 <script setup lang="ts">
-/* 
-  <h2 class="text-gray-800 text-4xl font-semibold text-center">Drop Off</h2>
-            <p class="mt-2 text-2xl text-gray-600 text-left ">
-              For drop off services
-              schedule a time that is best for you to come and drop off your items in one of the locker slots on the porch
-              of my residence. Please do not knock on the door. There will be instructions on the locker to guide you.
-            </p>
-*/
+
 </script>
