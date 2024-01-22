@@ -30,11 +30,28 @@
       </v-expansion-panel>
     </v-expansion-panels>
 
-
+    <v-expansion-panels
+      v-model="panel3"
+      class="py-5"
+    >
+      <v-expansion-panel style="background-color: #353332;">
+        <v-expansion-panel-title expand-icon="mdi-menu-down"><p class="font-extrabold md:text-3xl text-white text-xl">How do I drop off larger items?</p>
+            <template v-slot:actions>
+                <v-icon large color="white" icon="mdi-plus">
+                </v-icon>
+            </template>
+        </v-expansion-panel-title>
+        <v-expansion-panel-text>
+            
+            <div class="text-white text-xl lg:text-left">
+              <el-link href="https://youtube.com/shorts/OkfXQ4Ckxnc" type="primary" class="text-xl"><p class="text-xl">Click here to view larger item drop off video tutorial</p></el-link>
+            </div>
+        </v-expansion-panel-text>
+      </v-expansion-panel>
+    </v-expansion-panels>
 
     <v-expansion-panels
       v-model="panel2"
-      class="py-5"
     >
       <v-expansion-panel style="background-color: #353332;">
         <v-expansion-panel-title expand-icon="mdi-menu-down"><p class="font-extrabold md:text-3xl text-white text-xl">How do I pick up my items?</p>
@@ -44,6 +61,7 @@
             </template>
         </v-expansion-panel-title>
         <v-expansion-panel-text>
+          
             
             <div class="text-white text-xl lg:text-left">
                 <p>Input the code to the lock for the locker with your items in it that you will have received over text.</p>
@@ -53,6 +71,9 @@
         </v-expansion-panel-text>
       </v-expansion-panel>
     </v-expansion-panels>
+
+
+
 
     
     
@@ -72,6 +93,7 @@
     
     const panel = ref()
     const panel2 = ref()
+    const panel3 = ref()
     
 </script>
 
