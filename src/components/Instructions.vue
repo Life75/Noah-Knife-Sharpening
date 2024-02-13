@@ -23,7 +23,7 @@
       </div>
       <p class="text-center text-4xl pt-8 pb-6 font-bold">Options for services</p>
       <span class="lg:flex justify-center align-middle  md:space-y-0 md:space-x-4 space-x-0 space-y-5  ">
-        <v-card class=" text-xl "  max-width="420"  min-width="300"  min-height="450" max-height="400"
+        <v-card class=" text-xl" color="#cccccc" max-width="420"  min-width="300"  min-height="450" max-height="400"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-car" ></v-icon>
@@ -32,11 +32,11 @@
              <p class="text-3xl font-bold">Mobile</p>
              </template>
             <v-card-text>
-              <p class="text-2xl text-gray-600">
+              <p class="text-2xl text-gray-700">
               For mobile, I will come out to you with my equipment and sharpen your knives while you're in the comfort of
               your own home.
             </p>
-            <p class="mt-2 text-2xl text-gray-600 text-left">
+            <p class="mt-2 text-2xl text-gray-700 text-left">
               Mobile Service For Knives: $15 fee. $3 fee per mile after 10 mi. Call or text the number provided for
               details and setting up an appointment.
 
@@ -45,7 +45,7 @@
             </v-card-text>
           </v-card>
       
-        <v-card class=" text-xl  cursor-pointer "  max-width="420"  min-width="300"  min-height="450" link href="https://youtube.com/shorts/2lnKg-dXgIA?feature=share" append-icon="mdi-help-circle"
+        <v-card class=" text-xl  cursor-pointer " color="#cccccc"  max-width="420"  min-width="300"  min-height="450" link href="https://youtube.com/shorts/2lnKg-dXgIA?feature=share" append-icon="mdi-help-circle"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>
@@ -54,7 +54,7 @@
                 <p class="text-3xl font-bold">Drop Off</p>
              </template>
             <v-card-text>
-              <p class="mt-2 text-2xl text-gray-600 text-left ">
+              <p class="mt-2 text-2xl text-gray-700 text-left ">
               For drop off services
               schedule a time that is best for you to come and drop off your items in one of the locker slots on the porch
               of my residence. Please do not knock on the door. There will be instructions on the locker to guide you.
@@ -62,7 +62,7 @@
             </v-card-text>
           </v-card>
     
-          <v-card class=" text-xl cursor-pointer"  max-width="420"  min-width="300"  min-height="400" max-height="450" link href="https://youtube.com/shorts/2lnKg-dXgIA?feature=share" append-icon="mdi-help-circle"
+          <v-card class=" text-xl cursor-pointer" color="#cccccc" max-width="420"  min-width="300"  min-height="400" max-height="450" link href="https://youtube.com/shorts/2lnKg-dXgIA?feature=share" append-icon="mdi-help-circle"
              >
              <template v-slot:prepend>
                 <v-icon icon="mdi-package" ></v-icon>
@@ -71,13 +71,13 @@
              <p class="text-3xl font-bold text-wrap ">Drop Off: Restoration</p>
              </template>
             <v-card-text>
-              <p class="mt-2 text-2xl text-gray-600 text-left ">
+              <p class="mt-2 text-2xl text-gray-700 text-left ">
                 Full derust, repair, cleaning, and polish for damaged blades. 
               </p>
-              <p class="mt-2 text-2xl text-gray-600 text-left ">
+              <p class="mt-2 text-2xl text-gray-700 text-left ">
                 • No handle structure repairs, only metal cleaning and polishing. 
               </p>
-              <p class="mt-2 text-2xl text-gray-600 text-left text-wrap ">
+              <p class="mt-2 text-2xl text-gray-700 text-left text-wrap ">
                 • $25 an hour (can take anywhere between 1-5 hours depending on damage)
             </p>
             </v-card-text>

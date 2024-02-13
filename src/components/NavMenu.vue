@@ -16,7 +16,7 @@
         <hr class="h-px my-4  border-0 bg-[#E5EAF3] opacity-25">
         
         <div class="flex justify-center align-middle py-4">
-            <el-avatar class=" " :size="115" :src="circleUrl"/>
+            <el-avatar class=" " :size="115" src="/assets/small_icon_businness_logo-e817294b.png"/>
         </div>
         <div v-show="!isMobile()" class="flex justify-center align-middle text-center   py-5   ">
             <p class="text-7xl m-auto font-semibold flex">Noah's Knife <p class="pl-3 " style="text-decoration: underline;">Sharpening</p></p>
@@ -72,15 +72,15 @@
 
 
 <script setup lang="ts">
-import { reactive, toRefs, ref } from 'vue'
+import { ref } from 'vue'
 import { isMobile } from "../composables/PhoneCheckComposable"
-
+/*
 const state = reactive({
   circleUrl:
-    '/src/assets/images/small_icon_businness_logo.png',
+    ("../"),
 })
-
-const { circleUrl } = toRefs(state)
+*/
+//const { circleUrl } = toRefs(state)
 
 const showMenu = ref(false)
 </script>
