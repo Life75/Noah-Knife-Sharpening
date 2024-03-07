@@ -17,7 +17,7 @@ import Testimonals from './Testimonals.vue';
 import Instructions from './Instructions.vue';
 import FAQ from './FAQ.vue';
 import ContactUs from './ContactUs.vue';
-
+console.log("hello world")
 </script>
 
 <style>
