@@ -1,5 +1,6 @@
 <template>
     <div id="main" class="pt-10">
+    <Banner/>
     <Instructions id="instructions" class="mt-10 "/>
     <Testimonals id="testimonals" class="pt-36"/>
     <FAQ class="pt-36"/>
@@ -14,10 +15,10 @@
 
 <script setup lang="ts">
 import Testimonals from './Testimonals.vue';
+import Banner from './Banner.vue';
 import Instructions from './Instructions.vue';
 import FAQ from './FAQ.vue';
 import ContactUs from './ContactUs.vue';
-console.log("hello world")
 </script>
 
 <style>
